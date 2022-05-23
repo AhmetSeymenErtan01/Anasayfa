@@ -1,0 +1,100 @@
+<head>
+<link rel="stylesheet" href="css/AnaSayfa.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<title>Puan Sıralaması</title>
+
+
+
+
+
+</head>
+<body>
+<div class="a1" ><h1<span>Dünya Ligleri Puan Sıralaması</span></h1></div>
+<span id="lig">Lig Seçiniz</span><br>
+<div class="buton">
+ <form action="Süperlig.html">
+<button><img src="images/turkey.png" alt="SüperLig" width="15"><span>Süper Lig</span></button>
+</form> <iframe src="Süperlig.html"  frameborder="0" style="width: 620px;height: 350px;"></iframe>
+</div>
+<div class="buton">
+    <form id="İngiltere" action="Premier Lig.html">
+<button><img src="images/İngiltere.png" alt="PremierLig" width="15"><span>Premier Lig</span></button></form>
+<iframe src="Premier Lig.html"  frameborder="0" style="width: 620px;height: 350px;"></iframe>
+</div>
+
+<div class="buton">    <form action="İspanya Ligi.html">
+<button><img src="images/İspanya.png" alt="Laliga" width="15"><span>İspanya Ligi</span></button>
+</form><iframe src="İspanya Ligi.html"  frameborder="0" style="width: 620px;height: 350px;"></iframe>
+</div>
+
+<br>
+
+<br>
+
+
+<h2 id="TBaşlık">Futbol Tarihi</h2>
+<div class="Tarih">
+<P id="paragraf1">
+    FIFA, futbola benzeyen ve bilimsel kanıtlara sahip olan ilk oyunun, MÖ 300-200 yıllarında Çin'de askerî eğitim amacıyla oynanan cujuya dayandığını belirtmektedir.
+    Kıl ve tüyle doldurulmuş deriden yapılan bir topun, iki bambu kamışıyla sabitlenen 30–40 cm yüksekliğindeki bir kaleye sokulmasını amaçlayan bu oyunda; topa el ve kollar dışındaki her yerle temas etmek mümkündü.
+    Birkaç yüzyıl sonra Japonya'da, cujudan izler taşıyan ve varlığına ilk kez 644 yılında rastlanan kemari adlı oyun ortaya çıktı.
+    Cujunun aksine rekabete dayalı olmayan kemaride amaç, dairesel bir alan içerisinde yer alan oyuncuların topa ayaklarıyla vurarak topu yere düşürmeden birbirine göndermesine dayanmaktaydı.
+    Avrupa'da ise futbola benzer bilinen ilk oyun, Antik Yunanistan'da oynanan episkiros adlı oyundur. 
+    Vücudun her yeriyle temasın serbest olduğu oyunda oyuncular iki takıma ayrılmakta ve her takım oyuncuları, topu paslaşarak veya atarak rakip takıma ait alanın sonunda yer alan çizgiden geçirmeye çalışmaktaydı. 
+    Bu oyunun bir benzeri daha sonraları Roma İmparatorluğu döneminde harpastum adıyla oynandı.
+
+</P>
+<button id="gizle">Paragrafı gizle</button>
+<button id="göster">Paragrafı göster</button><br><br>
+<button onclick="kaynakca()">kaynakça</button> <button onclick="yenisayfa()">Kaynakçaya Ulaş</button>
+<br><br>
+<button onclick="gecemodu()">Karanlık Mod</button><br><br>
+<button onclick="saat()">Saat ve Tarih</button> <button onclick="gün()">Gün</button>
+<p id="gun1"></p> <p id="saat"></p>
+<br><br>
+   
+<button onclick="bilmece()">Bilmece Cevapla</button>
+<br><br>
+
+<p>Liglerde Puan hesaplama yöntemi</p>
+<input type="number" id="1.sayi" placeholder="Galibiyet">
+<input type="number" id="2.sayi"  placeholder="Beraberlik">
+<button onclick="puanhesaplama()">Puan Hesapla</button>
+<p id="sonuc"></p>
+    <br><br>
+<p>Size göre Tüm zamanların en iyi oyuncusunu yazın</p>
+<input type="text" id="txtoyuncu" placeholder="Oyuncuyu Girin.">
+<button onclick="eniyi()">Ekle</button>
+<p id="ekle"></p>
+<br><br>
+<p>Moderatörlerimizin oylaması sonucu en iyi 10 oyuncuyu sıralamak için basınız.</p>
+ <button onclick="liste()">Sırala</button>
+  <p id="listee"></p>
+<br><br>
+<p>Size Göre En iyi 10 oyuncuyu yazın(ilk olarak bütün oyuncuları ekleyiniz en son listeleye tıklayınız)</p>
+<input type="text" id="txtad">
+    <input type="button" value="EKLE" id="btn1">
+    <input type="button" value="LİSTELE" id="btn2">
+    <p id="sonuc1"></p>
+<br><br>
+<button  onclick="resimd()">Messinin gol sevinci için bas</button> <button onclick="resimd2()">Ronaldonun gol sevinci için bas</button>
+<br><br>
+<span id="messi"></span> <span id="ronaldo"></span>
+<br><br>
+
+
+
+<img id="GoatFoto"  src="images/Messi.jpg" alt="Goat">
+<p id="Goat">Futbolun En iyisi</p><span>
+
+
+
+    <a class="yukarı" href="#">Yukarı</a>
+    <button onclick="yenileme()">5 Saniye içinde sayfayı yenilemek için basınız</button>
+<br><br>
+    
+ 
+    <div id="sonuc"></div>
+<script src="js/Anasayfa.js"></script>
+</body>
